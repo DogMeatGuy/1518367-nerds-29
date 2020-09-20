@@ -1,14 +1,33 @@
 body {
 font-family: 'Roboto', sans-serif;
+min-width: 960px;
+margin: 0;
+padding: 0;
+font-size: 14px;
+line-height: 24px;
+font-weight: 700;
+color: var(--background-basic-text);
+text-transform: uppercase;
 }
 :root {
---background: #EEEEEE;
---background: #FB565A;
---background: #00CA74;
---background: #EFC849;
---background: #FFFFFF;
---background: #4D4D4D;
-
+--background-basic-grey: #EEEEEE;
+--background-button-red: #FB565A;
+--background-button-green-line: #00CA74;
+--background-button-yellow: #EFC849;
+--background-basic-white: #FFFFFF;
+--background-dots-bar-black: #4D4D4D;
+--background-basic-text: #000000;
 
 
 }
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  .main-header{
+      background-color: var(--background-basic-grey);
+      
+  }
+  .slider {
+    background-color: var(--background-basic-grey);
+  }
