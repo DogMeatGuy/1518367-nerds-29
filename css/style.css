@@ -100,19 +100,20 @@ text-align: left;
   border: none;
   border-radius: 3px;
   text-transform: uppercase;
+  outline: none;
 }
+
 .web-order-btn:hover,
-.web-order-btn:focus,
-.web-order-btn:active {
+.web-order-btn:focus {
   background-color: var(--web-order-btn-guidance);
 }
 
-.web-order-btn.active,
 .web-order-btn:active {
   cursor: default;
   background-color: var(--web-order-btn-pressed);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
+
 /**/
 .app-order-btn{
   font: inherit;
@@ -123,21 +124,21 @@ text-align: left;
   border: none;
   border-radius: 3px;
   text-transform: uppercase;
+  outline: none;
 }
 .app-order-btn:hover,
-.app-order-btn:focus,
-.app-order-btn:active {
+.app-order-btn:focus {
   background-color: var(--app-order-btn-guidance);
 }
 
-.app-order-btn.active,
 .app-order-btn:active {
   cursor: default;
   background-color: var(--app-order-btn-pressed);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
+
 /**/
-.pres-order-btn{
+.pres-order-btn {
   font: inherit;
   text-align: center;
   color: var(--white-text);
@@ -146,15 +147,14 @@ text-align: left;
   border: none;
   border-radius: 3px;
   text-transform: uppercase;
+  outline: none;
 }
 .pres-order-btn:hover,
-.pres-order-btn:focus,
-.pres-order-btn:active {
+.pres-order-btn:focus
+{
   background-color: var(--pres-order-btn-guidance);
 }
-
-.pres-order-btn.active,
-.presp-order-btn:active {
+.pres-order-btn:active {
   cursor: default;
   background-color: var(--pres-order-btn-pressed);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
