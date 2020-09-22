@@ -1,33 +1,162 @@
-body {
-font-family: 'Roboto', sans-serif;
-min-width: 960px;
-margin: 0;
-padding: 0;
-font-size: 14px;
-line-height: 24px;
-font-weight: 700;
-color: var(--background-basic-text);
-text-transform: uppercase;
-}
+
 :root {
---background-basic-grey: #EEEEEE;
---background-button-red: #FB565A;
---background-button-green-line: #00CA74;
---background-button-yellow: #EFC849;
---background-basic-white: #FFFFFF;
---background-dots-bar-black: #4D4D4D;
---background-basic-text: #000000;
+/*background color*/
+--main-background: #EEEEEE;
+/*text-color*/
+--black-text: #000000;
+--white-text: #FFFFFF;
+--gray-text: #283136;
 
+
+/*special-colors*/
+--text-guidance: #FB565A;
+/*Buttons*/
+/**/
+--button-web: #FB565A;
+--web-order-btn-guidance: #E74246;
+--web-order-btn-pressed: #D7373B;
+/**/
+--button-app: #00CA74;
+--app-order-btn-guidance: #00BC6C;
+--app-order-btn-pressed: #00AA62;
+/**/
+--button-pres: #EFC849;
+--pres-order-btn-guidance: #EAB534;
+--pres-order-btn-pressed: #E5A722;
 
 }
-img {
-    max-width: 100%;
-    height: auto;
-  }
-  .main-header{
-      background-color: var(--background-basic-grey);
-      
-  }
-  .slider {
-    background-color: var(--background-basic-grey);
-  }
+
+body {
+
+min-width: 1440px;
+margin: 0px;
+padding: 0px;
+font-family: "Roboto", Arial, sans-serif;
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+color: var(--black-text);
+}
+.page a {
+text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*Header, navigation*/
+.main-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: var(--main-background);
+}
+.nav-list {
+  list-style: none;
+
+}
+.basket {
+  list-style: none;
+}
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-black);
+}
+
+.nav-list a,
+.basket a {
+  color: var(--black-text);
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.basket a:hover,
+.basket a:focus {
+  color: var(--text-guidance);
+}
+
+/*Services*/
+.services-list {
+  list-style: none;
+}
+.services-item{
+text-align: left;
+}
+.services-item, h3 {
+  font-size: 24px;
+  line-height: 30px;  
+}
+.services-item, p {
+  font-size: 16px;
+  line-height: 24px; 
+}
+/**/
+.web-order-btn{
+  font: inherit;
+  text-align: center;
+  color: var(--white-text);
+  vertical-align: middle;
+  background-color: var(--button-web);
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.web-order-btn:hover,
+.web-order-btn:focus,
+.web-order-btn:active {
+  background-color: var(--web-order-btn-guidance);
+}
+
+.web-order-btn.active,
+.web-order-btn:active {
+  cursor: default;
+  background-color: var(--web-order-btn-pressed);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+/**/
+.app-order-btn{
+  font: inherit;
+  text-align: center;
+  color: var(--white-text);
+  vertical-align: middle;
+  background-color: var(--button-app);
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.app-order-btn:hover,
+.app-order-btn:focus,
+.app-order-btn:active {
+  background-color: var(--app-order-btn-guidance);
+}
+
+.app-order-btn.active,
+.app-order-btn:active {
+  cursor: default;
+  background-color: var(--app-order-btn-pressed);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+/**/
+.pres-order-btn{
+  font: inherit;
+  text-align: center;
+  color: var(--white-text);
+  vertical-align: middle;
+  background-color: var(--button-pres);
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.pres-order-btn:hover,
+.pres-order-btn:focus,
+.pres-order-btn:active {
+  background-color: var(--pres-order-btn-guidance);
+}
+
+.pres-order-btn.active,
+.presp-order-btn:active {
+  cursor: default;
+  background-color: var(--pres-order-btn-pressed);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+/**/
