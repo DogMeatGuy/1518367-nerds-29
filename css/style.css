@@ -10,6 +10,8 @@
 
   /*special-colors*/
   --text-guidance: #fb565a;
+  --main-logo-pressed: #A6A6A6;
+
   /*Buttons*/
 
   --button-web: #fb565a;
@@ -198,4 +200,15 @@ color: var(--gray-text);
   font-weight: bold;
 font-size: 45px;
 line-height: 64px;
+}
+/*Companies*/
+.companies-item {
+  opacity: 0.2;
+}
+.companies-item:hover,
+.companies-item:focus {
+opacity: 1;
+}
+.companies-item:active {
+  opacity: 0.1;
 }
