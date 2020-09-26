@@ -6,15 +6,14 @@
   --black-text: #000000;
   --white-text: #ffffff;
   --gray-text: #283136;
-  
+  --gray-text-product: #666666;
+  --footer-text-p: #444444;
 
   /*special-colors*/
   --text-guidance: #fb565a;
-  --main-logo-pressed: #A6A6A6;
-  --catalog-button-guidance: #DFDFDF;
-  --catalog-button-pressed: #D5D5D5;
-
-
+  --main-logo-pressed: #a6a6a6;
+  --catalog-button-guidance: #dfdfdf;
+  --catalog-button-pressed: #d5d5d5;
 
   /*Buttons*/
 
@@ -80,6 +79,7 @@ img {
   cursor: default;
   mix-blend-mode: normal;
   opacity: 0.3;
+  color: var(--black-text);
 }
 .nav-item.active {
   text-decoration: underline;
@@ -100,6 +100,7 @@ img {
 .services-item p {
   font-size: 16px;
   line-height: 24px;
+  color: var(--gray-text);
 }
 
 .web-order-btn {
@@ -112,6 +113,9 @@ img {
   border-radius: 3px;
   text-transform: uppercase;
   outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .web-order-btn:hover,
@@ -123,6 +127,7 @@ img {
   cursor: default;
   background-color: var(--web-order-btn-pressed);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .app-order-btn {
@@ -135,6 +140,9 @@ img {
   border-radius: 3px;
   text-transform: uppercase;
   outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
 }
 .app-order-btn:hover,
 .app-order-btn:focus {
@@ -145,6 +153,7 @@ img {
   cursor: default;
   background-color: var(--app-order-btn-pressed);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pres-order-btn {
@@ -157,6 +166,9 @@ img {
   border-radius: 3px;
   text-transform: uppercase;
   outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
 }
 .pres-order-btn:hover,
 .pres-order-btn:focus {
@@ -166,44 +178,46 @@ img {
   cursor: default;
   background-color: var(--pres-order-btn-pressed);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
 }
 /*About*/
 .about-content.heading {
   font-weight: 500;
-font-size: 45px;
-line-height: 45px;
+  font-size: 45px;
+  line-height: 45px;
 }
 .about-content.description {
   font-size: 16px;
-line-height: 24px;
-color: var(--gray-text);
+  line-height: 24px;
+  color: var(--gray-text);
 }
 .about-content.order-list {
   font-size: 16px;
-line-height: 24px;
-text-transform: uppercase;
-color: var(--gray-text);
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--gray-text);
+  font-weight: bold;
 }
 .features-list {
   font-size: 16px;
-line-height: 24px;
-color: var(--gray-text);
+  line-height: 24px;
+  color: var(--gray-text);
 }
 .description-heading {
   font-weight: bold;
   font-size: 16px;
-line-height: 24px;
-text-transform: uppercase;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 .description-term {
   font-size: 16px;
-line-height: 18px;
-color: var(--gray-text);
+  line-height: 18px;
+  color: var(--gray-text);
 }
 .description-definition {
   font-weight: bold;
-font-size: 45px;
-line-height: 64px;
+  font-size: 45px;
+  line-height: 64px;
 }
 /*Companies*/
 .companies-item {
@@ -211,7 +225,7 @@ line-height: 64px;
 }
 .companies-item:hover,
 .companies-item:focus {
-opacity: 1;
+  opacity: 1;
 }
 .companies-item:active {
   opacity: 0.1;
@@ -223,13 +237,14 @@ opacity: 1;
 
 .stuff-high {
   font-weight: bold;
-font-size: 36px;
-line-height: 36px;
+  font-size: 36px;
+  line-height: 36px;
 }
 .stuff-low {
   font-weight: normal;
-font-size: 16px;
-line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--footer-text-p);
 }
 /*Catalog*/
 .magasine-header {
@@ -237,6 +252,31 @@ line-height: 22px;
 }
 
 /*Sorting*/
+.sorting-list {
+  list-style: none;
+}
+.sorting-list h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.sorting-item a {
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--black-text);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+.sorting-item a:hover,
+.sorting-item a:focus {
+  opacity: 0.6;
+}
+.sorting-item a:active {
+  color: var(--black-text);
+}
 .sorting-show-button {
   background-color: var(--main-background);
   color: var(--black-text);
@@ -248,8 +288,8 @@ line-height: 22px;
   text-transform: uppercase;
   outline: none;
   font-weight: 500;
-font-size: 16px;
-line-height: 18px;
+  font-size: 16px;
+  line-height: 18px;
 }
 .sorting-show-button:hover,
 .sorting-show-button:focus {
@@ -260,5 +300,79 @@ line-height: 18px;
   background-color: var(--catalog-button-pressed);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   mix-blend-mode: normal;
- opacity: 0.3;
+  opacity: 0.3;
+}
+/*Product*/
+.product-list {
+  list-style: none;
+}
+.button-buy {
+  background-color: var(--button-web);
+  border-radius: 3px;
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white-text);
+  text-align: center;
+  text-transform: uppercase;
+}
+.button-buy:hover,
+.button-buy:focus {
+  background-color: var(--web-order-btn-guidance);
+}
+.button-buy:active {
+  cursor: default;
+  background-color: var(--web-order-btn-pressed);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+.buy-bar h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black-text);
+}
+.buy-bar p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--gray-text-product);
+}
+.pagination {
+  list-style: none;
+}
+.page-nav-item a {
+  background-color: var(--main-background);
+  color: var(--black-text);
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 3px;
+}
+.page-nav-item a:hover,
+.page-nav-item a:focus {
+  background-color: var(--catalog-button-guidance);
+}
+.page-nav-item a:active {
+  background-color: var(--catalog-button-pressed);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  mix-blend-mode: normal;
+  color: rgba(0, 1, 1, 0.3);
+}
+.page-nav-item.active {
+  background: rgba(0, 0, 0, 0.0001);
+  border: 3px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
