@@ -14,6 +14,8 @@
   --main-logo-pressed: #a6a6a6;
   --catalog-button-guidance: #dfdfdf;
   --catalog-button-pressed: #d5d5d5;
+  --logo-color-pressed: #A6A6A6;
+
 
   /*Buttons*/
 
@@ -276,6 +278,7 @@ img {
 }
 .sorting-item a:active {
   color: var(--black-text);
+  opacity: 1;
 }
 .sorting-show-button {
   background-color: var(--main-background);
