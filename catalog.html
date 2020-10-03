@@ -28,8 +28,38 @@
   <main class="main-content">
     <h1 class="magasine-header">Магазин готовых шаблонов</h1>
     <section class="price">
-      <!--Здесь будет форма сортировки по цене-->
-      <button type="button" class="sorting-show-button">Показать</button>
+      <form action="https://echo.htmlacademy.ru/courses" method="get">
+        <div class="price-range-container">
+            <h3>Стоимость:</h3>
+        <input type="range" id="price-range" name="price-range" min="0" max="15000" step="1" class="range-item">
+        </div>
+        <div class="grid-choise-container">
+          <h3>Сетка:</h3>
+          <label>
+            <input type="radio" name="grid-choise" value="adaptive" checked>Адаптивная
+          </label>
+          <label>
+            <input type="radio" name="grid-choise" value="fixed">Фиксированная
+          </label>
+          <label>
+            <input type="radio" name="grid-choise" value="Rubber">Резиновая
+          </label>
+        </div>
+        <div class="features-checkbox-container">
+          <h3>Особенности:</h3>
+          <input type="checkbox" name="slider" id="slider-filter" checked>
+          <label for="slider-filter">Слайдер</label>
+          <input type="checkbox" name="block-advantages" id="blocks-filter">
+          <label for="blocks-filter">Блок преиумещств</label>
+          <input type="checkbox" name="news" id="news-filter" checked>
+          <label for="news-filter">Новости</label>
+          <input type="checkbox" name="gallery" id="gallery-filter">
+          <label for="gallery-filter">Галерея</label>
+          <input type="checkbox" name="cart-basket" id="cart-filter">
+          <label for="cart-filter">Корзина</label>
+        </div>
+        <button type="submit" class="sorting-show-button">Показать</button>
+      </form>
     </section>
     <section class="sorting">
       <h2>Сортировать:</h2>
@@ -68,67 +98,62 @@
             <img src="img/img-sedona 1.jpg" width="359" height="578" alt="Sedona">
           </a>
           <div class="buy-bar">
-            <h3>Sedona</h3>
+            <a href="#" class="product-name-a"><h3>Sedona</h3></a>
             <p>Информационный сайт для туристов</p>
             <button type="button" class="button-buy">9900 &#8381</button>
           </div>
         </li>
         <li class="product-item">
-          <h3>Pink</h3>
           <!--Стилевой бар с кружками-->
           <a href="#">
             <img src="img/img-pink 1.jpg" width="358" height="578" alt="Pink">
           </a>
           <div class="buy-bar">
-            <h3>Pink</h3>
+            <a href="#" class="product-name-a"><h3>Pink</h3></a>
             <p>Какое-то приложение</p>
             <button type="button" class="button-buy">9999 &#8381</button>
           </div>
         </li>
         <li class="product-item">
-          <h3>Borodinski</h3>
           <!--Стилевой бар с кружками-->
           <a href="#">
             <img src="img/img-barbershop 1.jpg" width="358" height="578" alt="Borodinski">
           </a>
           <div class="buy-bar">
-            <h3>Borodinski</h3>
+            <a href="#" class="product-name-a"><h3>Borodinski</h3></a>
             <p>Обычная парикмахерская за много деняк</p>
             <button type="button" class="button-buy">9999 &#8381</button>
           </div>
         </li>
         <li class="product-item">
-          <h3>Mishka</h3>
           <!--Стилевой бар с кружками-->
           <a href="#">
             <img src="img/img-mishka 1.jpg" width="359" height="578" alt="Mishka">
           </a>
           <div class="buy-bar">
-            <h3>Mishka</h3>
+            <a href="#" class="product-name-a"><h3>Mishka</h3></a>
             <p>Жена будет рада</p>
             <button type="button" class="button-buy">9999 &#8381</button>
           </div>
         </li>
         <li class="product-item">
-          <h3>Aplus</h3>
           <!--Стилевой бар с кружками-->
           <a href="#">
             <img src="img/img-aplus 1.jpg" width="359" height="578" alt="Aplus">
           </a>
           <div class="buy-bar">
-            <h3>Aplus</h3>
+            <a href="#" class="product-name-a"><h3>Aplus</h3></a>
             <p>Получи нормальное образование</p>
             <button type="button" class="button-buy">9999 &#8381</button>
           </div>
         </li>
         <li class="product-item">
-          <h3>Kvast</h3>
           <!--Стилевой бар с кружками-->
           <a href="#">
             <img src="img/img-kvast 1.jpg" width="359" height="578" alt="Kvast">
           </a>
           <div class="buy-bar">
-            <h3>Kvast</h3>
+            <a href="#" class="product-name-a"><h3>Kvast</h3></a>
             <p>Сайт для "Alcohol-Free"</p>
             <button type="button" class="button-buy">9999 &#8381</button>
           </div>
