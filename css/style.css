@@ -106,7 +106,7 @@ img {
   text-decoration-color: var(--text-guidance);
 }
 /*Slider*/
-.slider {
+.slider-list {
   display: grid;
   grid-template-rows: 1fr;
   width: 1160px;
@@ -383,9 +383,9 @@ img {
 .catalog-container {
   display: grid;
   grid-template-areas:
-     "price sorting sorting"
-     "price product product";
-  grid-template-columns: 1fr 1fr 1fr;
+     "price sorting"
+     "price product";
+  grid-template-columns: min-content 1fr;
   align-content: start;
   width: 1160px;
   margin: 0 auto;
