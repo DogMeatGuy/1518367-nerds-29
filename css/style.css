@@ -63,11 +63,13 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   background-color: var(--main-background);
-  display: grid;
-  grid-template-columns: max-content 2fr min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
   width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
+  padding-top: 60px;
 }
 .main-navigation-container {
   background-color: var(--main-background);
@@ -76,11 +78,20 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 439px;
 }
 .basket {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 115px;
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .nav-list a,
