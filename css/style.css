@@ -309,9 +309,13 @@ margin-bottom: 80px;
   font-weight: bold;
 }
 .features-list {
+  list-style: none;
   font-size: 16px;
   line-height: 24px;
   color: var(--gray-text);
+}
+.features-item::before {
+  content: url(ul-line-index.svg);
 }
 .description-heading {
   font-weight: bold;
@@ -372,6 +376,7 @@ background-color: var(--main-background);
 .map {
   justify-self: center;
   padding: 0px;
+  width: 100%;
 }
 .address-card {
   width: 308px;
@@ -409,18 +414,29 @@ text-transform: uppercase;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3);
 }
+.footer-container {
+  margin-left: 0px;
+  padding-left: 0px;
+}
 .social {
   list-style: none;
   padding: 0 10px;
   display: flex;
-  justify-content: space-between;
   width: 261px;
+}
+.social-item {
 }
 .a-btn-soc {
   border-radius: 50%;
   background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+  display: block;
   width: 81px;
   height: 81px;
+}
+.a-btn-soc img {
+  position: relative;
+ top: 35%;
+ left: 35%;
 }
 .a-btn-soc:hover,
 .a-btn-soc:focus {
@@ -660,6 +676,7 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 .product-name-a {
   text-decoration: none;
   margin-top: 26px;
+  color: var(--black-text);
 }
 .product-name-a:hover,
 .product-name-a:focus {
@@ -706,6 +723,8 @@ text-transform: uppercase;
   justify-content: space-between;
   width: 443px;
   margin-bottom: 60px;
+  margin-right: auto;
+  margin-left: 100px;
 }
 .page-nav-item a {
   background-color: var(--main-background);
