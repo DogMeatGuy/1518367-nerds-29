@@ -14,6 +14,13 @@
   --catalog-button-guidance: #dfdfdf;
   --catalog-button-pressed: #d5d5d5;
   --logo-color-pressed: #a6a6a6;
+  --product-background: #F2F2F2;
+  --buy-bar-color: #4D4D4D;
+  --range-line-color: #D7DCDF;
+
+
+
+
 
   /*Buttons*/
 
@@ -548,6 +555,11 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   text-align: center;
   padding-top: 8px;
 }
+.range-line {
+  width: 216px;
+  height: 2px;
+  background-image: linear-gradient(to right #00CA74 #D7DCDF);
+}
 /*Sorting*/
 .sorting {
   grid-area: sorting;
@@ -665,9 +677,25 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   margin-bottom: 55px;
 }
 .product-item {
-  border-radius: 3px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 0 0 5px 5px;
+background-color: var(--product-background);
+width: 360px;
+margin-bottom: 31px;
+}
+.product-item::before {
+  content: url('../img/product-bar.svg');
+  margin: 0px;
+  width: 360px;
+}
+.product-item:hover
+.product-item:focus {
+  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
 }
 .button-buy {
+  position: absolute;
+  bottom: 42px;
   background-color: var(--button-web);
   border-radius: 3px;
   font: inherit;
@@ -683,7 +711,6 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   text-align: center;
   text-transform: uppercase;
   padding: 17px 72px;
-  margin-bottom: 44px;
   margin-left: 80px;
   margin-right: 80px;
 }
@@ -700,6 +727,9 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   text-decoration: none;
   margin-top: 26px;
   color: var(--black-text);
+  display: block;
+  width: min-content;
+  margin: auto;
 }
 .product-name-a:hover,
 .product-name-a:focus {
@@ -712,17 +742,24 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  opacity: 0.3;
-  color: var(--black-text);
+  color: rgba(0, 0, 0, 0.3);
+
+}
+.product-item.buy-bar:hover
+.product-item.buy-bar:focus {
+  transform: scale(1);
 }
 .buy-bar {
+  position: absolute;
+  top: 355px;
+  left: -1px;
   width: 360px;
   height: 231px;
   background-color: var(--main-background);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  transform: scale(1);
+  transform-origin: 50% 100%;
+  border-radius: 0 0 5px 5px;
 }
 .buy-bar h3 {
   font-weight: 700;
@@ -730,6 +767,8 @@ font-size: 18px;
 line-height: 30px;
 text-align: center;
 text-transform: uppercase;
+margin-top: 26px;
+margin-bottom: 16px;
 }
 .buy-bar p {
   font-weight: normal;
@@ -737,8 +776,6 @@ text-transform: uppercase;
   line-height: 18px;
   text-align: center;
   color: var(--gray-text-product);
-  margin-bottom: 32px;
-  margin-top: 12px;
 }
 .pagination {
   list-style: none;
