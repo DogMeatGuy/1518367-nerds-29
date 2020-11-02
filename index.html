@@ -33,7 +33,7 @@
     <h1 style="display: none;">Дизайн-Студия Нёрдс</h1>
     <div class="slider-container">
       <ul class="slider-list">
-        <li class="slider-item">
+        <li class="slider-item first1">
           <h3>
             Долго, дорого,<br />
             скрупулезно.
@@ -43,9 +43,8 @@
             для вашего сайта или мобильного приложения
           </p>
           <a href="#" class="more-info-slider-btn" name="more-info-slider">Узнать больше</a>
-          <img src="img/nerds-index-slide1.png" width="760px" height="431px" alt="" />
         </li>
-        <li class="slider-item" style="display: none;">
+        <li class="slider-item second2" style="display: none;">
           <h3>
             Любим математику<br />
             как никто другой
@@ -55,9 +54,8 @@
             для расчета идеальных пропорций
           </p>
           <a href="#" class="more-info-slider-btn" name="more-info-slider">Узнать больше</a>
-          <img src="img/nerds-index-slide2.png" width="760px" height="431px" alt="" />
         </li>
-        <li class="slider-item" style="display: none;">
+        <li class="slider-item third3" style="display: none;">
           <h3>
             Только ночь,<br />
             только хардкор
@@ -67,13 +65,14 @@
             Ближе к полуночи работа только начинается.
           </p>
           <a href="#" class="more-info-slider-btn" name="more-info-slider">Узнать больше</a>
-          <img src="img/nerds-index-slide3.png" width="760px" height="431px" alt="" />
         </li>
       </ul>
       <div class="buttons-slider-container">
-        <button type="button" name="1-slider" class="1-slider"></button>
-        <button type="button" name="1-slider" class="2-slider"></button>
-        <button type="button" name="1-slider" class="3-slider"></button>
+        <button type="button" name="1-slider" class="button-slider 1-slider">
+          <div class="checked-button"></div>
+        </button>
+        <button type="button" name="1-slider" class="button-slider 2-slider"></button>
+        <button type="button" name="1-slider" class="button-slider 3-slider"></button>
       </div>
     </div>
     <div class="main-container">
@@ -114,12 +113,18 @@
           <img src="img/nerds-illustration1.jpg" width="360" height="208" alt="Логотип Нёрдс" />
           <p class="description-heading">с 2004 года Любим точность во всем:</p>
           <dl class="description-list">
-            <dt class="description-term">Уровень самоотдачи</dt>
-            <dd class="description-definition">146%</dd>
-            <dt class="description-term">Соблюдение сроков</dt>
-            <dd class="description-definition">100%</dd>
-            <dt class="description-term">Минимальная предоплата</dt>
-            <dd class="description-definition">50%</dd>
+            <div class="des-list-cont">
+              <dt class="description-term">Уровень самоотдачи</dt>
+              <dd class="description-definition">146%</dd>
+            </div>
+            <div class="des-list-cont">
+              <dt class="description-term">Соблюдение сроков</dt>
+              <dd class="description-definition">100%</dd>
+            </div>
+            <div class="des-list-cont">
+              <dt class="description-term">Минимальная предоплата</dt>
+              <dd class="description-definition">50%</dd>
+            </div>
           </dl>
         </div>
       </section>
@@ -156,13 +161,16 @@
     <div class="footer-container">
       <ul class="social">
         <li class="social-item">
-          <a href="https://vk.com/" class="a-btn-soc"><img src="img/vk-icon.svg" alt="vk_logo" /></a>
+          <a href="https://vk.com/" class="a-btn-soc"><img src="img/vk-icon.svg" class="a-btn-soc-icon"
+              alt="vk_logo" /></a>
         </li>
         <li class="social-item">
-          <a href="https://ru-ru.facebook.com/" class="a-btn-soc"><img src="img/fb-icon.svg" alt="facebook" /></a>
+          <a href="https://ru-ru.facebook.com/" class="a-btn-soc"><img src="img/fb-icon.svg" class="a-btn-soc-icon"
+              alt="facebook" /></a>
         </li>
         <li class="social-item">
-          <a href="https://www.instagram.com/" class="a-btn-soc"><img src="img/insta-icon.svg" alt="instagram" /></a>
+          <a href="https://www.instagram.com/" class="a-btn-soc"><img src="img/insta-icon.svg" class="a-btn-soc-icon"
+              alt="instagram" /></a>
         </li>
       </ul>
       <div class="stuff">
