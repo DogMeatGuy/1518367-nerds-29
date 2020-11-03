@@ -525,6 +525,61 @@ opacity: 0.3;
   line-height: 22px;
   color: var(--footer-text-p);
 }
+/*Modal*/
+.modal-window {
+  width: 960px;
+  height: 590px;
+  font-family: inherit;
+}
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 761px;
+  height: 353px;
+  outline: 1px solid black;
+}
+.modal-window h3 {
+font-weight: bold;
+font-size: 45px;
+line-height: 53px;
+}
+.labelform {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+.field {
+border: 2px solid #D7DCDE;
+box-sizing: border-box;
+border-radius: 3px;
+width: 360px;
+height: 50px;
+}
+.submit-button {
+  border-radius: 3px;
+  background-color: var(--button-web);
+  color: var(--white-text);
+  font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+text-transform: uppercase;
+outline: none;
+border: none;
+width: 259px;
+height: 50px;
+}
+.submit-button:hover,
+.submit-button:focus {
+  background-color: var(--web-order-btn-guidance);
+  outline: none;
+}
+.submit-button:active {
+  cursor: default;
+  background-color: var(--web-order-btn-pressed);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
 /*Catalog*/
 .magasine-header-container {
   background-color: var(--main-background);
