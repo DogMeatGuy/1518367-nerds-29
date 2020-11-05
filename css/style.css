@@ -153,23 +153,27 @@ img {
   z-index: 0;
   width: 760px;
   height: 431px;
-  background-image: url('../img/nerds-index-slide1.jpg');
+  background-image: url('../img/nerds-index-slide1.png');
   background-repeat: no-repeat;
 }
 .second-slide {
   position: absolute;
+  top: -11px;
+  left: 397px;
   z-index: 0;
   width: 760px;
   height: 431px;
-  background-image: url('../img/nerds-index-slide2.jpg');
+  background-image: url('../img/nerds-index-slide2.png');
   background-repeat: no-repeat;
 }
 .third-slide {
   position: absolute;
+  top: -10px;
+  left: 397px;
   z-index: 0;
   width: 760px;
   height: 431px;
-  background-image: url('../img/nerds-index-slide3.jpg');
+  background-image: url('../img/nerds-index-slide3.png');
   background-repeat: no-repeat;
 }
 .slider-item h3 {
@@ -180,6 +184,14 @@ img {
   font-size: 55px;
   line-height: 55px;
   margin-bottom: 25px;
+}
+.slider-item.second p {
+  position: relative;
+  top: 26px;
+}
+.slider-item.third p {
+  position: relative;
+  top: 26px;
 }
 .slider-item p {
   position: relative;
@@ -193,7 +205,7 @@ img {
 }
 .more-info-slider-btn {
   position: relative;
-  top: 11px;
+  top: 10px;
   z-index: 1;
   font: inherit;
   text-align: center;
@@ -663,26 +675,49 @@ opacity: 0.3;
 }
 /*Modal*/
 .modal-window {
+  position: absolute;
+  top: 1717px;
+  left: 472px;
   width: 960px;
   height: 590px;
   font-family: inherit;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 .form-container {
   display: flex;
+  margin-left: 100px;
+  margin-top: 56px;
   flex-wrap: wrap;
   width: 761px;
   height: 353px;
-  outline: 1px solid black;
 }
 .modal-window h3 {
+position: relative;
+top: 19px;
+left: 100px;
 font-weight: bold;
 font-size: 45px;
 line-height: 53px;
 }
 .labelform {
+  display: flex;
+  flex-direction: column;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
+}
+.labelform.name {
+
+}
+.labelform.email {
+position: relative;
+left: 40px;
+}
+.labelform.message {
+position: relative;
+top: 10px;
+left: 1px;
 }
 .field {
 border: 2px solid #D7DCDE;
@@ -690,6 +725,24 @@ box-sizing: border-box;
 border-radius: 3px;
 width: 360px;
 height: 50px;
+}
+.name-field {
+  width: 360px;
+  height: 50px;
+  position: relative;
+  top: 8px;
+}
+.mail-field {
+  position: relative;
+  top: 9px;
+  width: 360px;
+  height: 50px;
+}
+.message-field {
+position: relative;
+top: 9px;
+width: 760px;
+height: 118px;
 }
 .submit-button {
   border-radius: 3px;
@@ -703,6 +756,9 @@ outline: none;
 border: none;
 width: 259px;
 height: 50px;
+position: relative;
+top: 34px;
+left: 1px;
 }
 .submit-button:hover,
 .submit-button:focus {
