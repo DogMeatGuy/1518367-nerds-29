@@ -30,10 +30,10 @@
     </div>
   </header>
   <main class="main-content">
-    <h1 style="display: none;">Дизайн-Студия Нёрдс</h1>
+    <h1 class="visually-hidden">Дизайн-Студия Нёрдс</h1>
     <div class="slider-container">
       <ul class="slider-list">
-        <li class="slider-item first">
+        <li class="slider-item first current">
           <h3>
             Долго, дорого,<br />
             скрупулезно.
@@ -45,7 +45,7 @@
           <a href="#" class="more-info-slider-btn" name="more-info-slider">Узнать больше</a>
           <div class="first-slide"></div>
         </li>
-        <li class="slider-item second" style="display: none;">
+        <li class="slider-item second">
           <h3>
             Любим математику<br />
             как никто другой
@@ -57,7 +57,7 @@
           <a href="#" class="more-info-slider-btn" name="more-info-slider">Узнать больше</a>
           <div class="second-slide"></div>
         </li>
-        <li class="slider-item third" style="display: none;">
+        <li class="slider-item third">
           <h3>
             Только ночь,<br />
             только хардкор
@@ -72,15 +72,19 @@
       </ul>
       <div class="buttons-slider-container">
         <button type="button" name="1-slider" class="button-slider 1-slider">
+          <div class="checked-button current"></div>
+        </button>
+        <button type="button" name="2-slider" class="button-slider 2-slider">
           <div class="checked-button"></div>
         </button>
-        <button type="button" name="1-slider" class="button-slider 2-slider"></button>
-        <button type="button" name="1-slider" class="button-slider 3-slider"></button>
+        <button type="button" name="3-slider" class="button-slider 3-slider">
+          <div class="checked-button"></div>
+        </button>
       </div>
     </div>
     <div class="main-container">
       <section class="services">
-        <h2 style="display: none;">Услуги</h2>
+        <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
           <li class="services-item img1">
             <h3>Веб-сайты</h3>
@@ -101,7 +105,7 @@
       </section>
       <section class="about">
         <div class="about-container first">
-          <h2 style="display: none;">О нас</h2>
+          <h2 class="visually-hidden">О нас</h2>
           <p class="about-content heading">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="about-content description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
             превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -132,7 +136,7 @@
         </div>
       </section>
       <section class="companies">
-        <h2 style="display: none;">Партнеры</h2>
+        <h2 class="visually-hidden">Партнеры</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/group5.svg" alt="Html Academy" class="companies-item academy" />
         </a>
@@ -186,20 +190,17 @@
     <h3>Напишите нам</h3>
     <form action="https://echo.htmlacademy.ru/courses" method="post" class="form-container">
       <label class="labelform name">
-        Ваше имя:<input type="text" name="username" id="username-field" placeholder="&nbsp;&nbsp;&nbsp;Имя Фамилия" required
-          class="field name-field">
+        Ваше имя:<input type="text" name="username" id="username-field" placeholder="Имя Фамилия" class="field name-field">
       </label>
       <label class="labelform email">
-        Ваш email:<input type="email" name="user-email" id="user-email-field" placeholder="&nbsp;&nbsp;&nbsp;email@example.com" required
-          class="field mail-field">
+        Ваш email:<input type="email" name="user-email" id="user-email-field" placeholder="email@example.com" class="field mail-field">
       </label>
       <label class="labelform message">
-        Текст письма:<input type="text" name="message" id="message-field" placeholder="В свободной форме" required
-          class="field message-field">
+        Текст письма:<textarea name="message" id="message-field" placeholder="В свободной форме" class="field message-field"></textarea>
       </label>
       <input type="submit" value="отправить" class="submit-button">
     </form>
-    <button class="close-modal-button"></button>
+    <button class="close-modal-button" aria-label="Закрыть"><img src="img/close-modal.svg"></button>
   </section>
 </body>
 
