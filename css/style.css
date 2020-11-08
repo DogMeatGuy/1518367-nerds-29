@@ -1067,6 +1067,7 @@ img {
   margin-bottom: 16px;
 }
 .check {
+  position: relative;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
@@ -1105,28 +1106,28 @@ img {
 
 .check-box.slider {
   position: absolute;
-  left: 402px;
-  top: 921px;
+  left: -6px;
+    top: -2px;
 }
 .check-box.advantages {
   position: absolute;
-  left: 402px;
-  top: 961px;
+  left: -6px;
+    top: -2px;
 }
 .check-box.news {
   position: absolute;
-  left: 402px;
-  top: 1001px;
+  left: -6px;
+    top: -2px;
 }
 .check-box.gallery {
   position: absolute;
-  left: 402px;
-  top: 1041px;
+  left: -6px;
+    top: -2px;
 }
 .check-box.cart-basket {
   position: absolute;
-  left: 402px;
-  top: 1081px;
+  left: -6px;
+    top: -2px;
 }
 
 /*Sorting-show-button*/
