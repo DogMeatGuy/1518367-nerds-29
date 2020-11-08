@@ -14,7 +14,7 @@
     <div class="main-navigation-container">
       <nav class="main-navigation">
         <a href="index.html " class="main-logo">
-          <img src="img/nerds-logo.svg" class="main-logo-item" alt="Логотип дизайн студии Нёрдс" />
+          <img src="img/nerds-logo.svg" class="main-logo-item" width="160" height="65" alt="Логотип дизайн студии Нёрдс" />
         </a>
         <ul class="nav-list">
           <li><a href="index.html" class="nav-item">Студия</a></li>
@@ -38,7 +38,7 @@
             Долго, дорого,<br />
             скрупулезно.
           </h3>
-          <p>
+          <p class="first-p">
             Математически выверенный дизайн<br />
             для вашего сайта или мобильного приложения
           </p>
@@ -50,7 +50,7 @@
             Любим математику<br />
             как никто другой
           </h3>
-          <p>
+          <p class="second-p">
             Никакого креатива, только математические формулы<br />
             для расчета идеальных пропорций
           </p>
@@ -62,7 +62,7 @@
             Только ночь,<br />
             только хардкор
           </h3>
-          <p>
+          <p class="third-p">
             Работать днем, как все? Мы против этого.<br />
             Ближе к полуночи работа только начинается.
           </p>
@@ -72,13 +72,13 @@
       </ul>
       <div class="buttons-slider-container">
         <button type="button" name="1-slider" class="button-slider 1-slider">
-          <div class="checked-button current"></div>
+          <span class="checked-button current"></span>
         </button>
         <button type="button" name="2-slider" class="button-slider 2-slider">
-          <div class="checked-button"></div>
+          <span class="checked-button"></span>
         </button>
         <button type="button" name="3-slider" class="button-slider 3-slider">
-          <div class="checked-button"></div>
+          <span class="checked-button"></span>
         </button>
       </div>
     </div>
@@ -138,46 +138,46 @@
       <section class="companies">
         <h2 class="visually-hidden">Партнеры</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/group5.svg" alt="Html Academy" class="companies-item academy" />
+          <img src="img/group5.svg" alt="Html Academy" width="199" height="68" class="companies-item academy" />
         </a>
         <div class="border-element boone"></div>
         <a href="">
-          <img src="img/logo-22.svg" alt="Barbershop Borodinski" class="companies-item borodinski" />
+          <img src="img/logo-22.svg" alt="Barbershop Borodinski" width="209" height="90" class="companies-item borodinski" />
         </a>
         <div class="border-element botwo"></div>
         <a href="">
-          <img src="img/logo-32.svg" alt="Pink" class="companies-item pink" />
+          <img src="img/logo-32.svg" alt="Pink" width="185" height="52" class="companies-item pink" />
         </a>
         <div class="border-element bothree"></div>
         <a href="">
-          <img src="img/logo-42.svg" alt="Mishka" class="companies-item mishka" />
+          <img src="img/logo-42.svg" alt="Mishka" width="173" height="84" class="companies-item mishka" />
         </a>
       </section>
     </div>
   </main>
   <footer class="main-footer">
     <div class="map">
-      <img src="img/map.jpg" alt="map" class="map-item">
-      <img src="img/map-marker.png" alt="map-marker" class="map-marker">
+      <img src="img/map.jpg" alt="map" width="1440" height="416" class="map-item">
+      <img src="img/map-marker.png" alt="map-marker" width="231" height="190" class="map-marker">
       <div class="address-card">
         <h4>NЁRDS DESIGN STUDIO</h4>
         <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-        <p class="adress-kard-p-position">тел. +7 (812) 275-75-75</p>
+        <a href="tel:+7 (812) 275-75-75" class="adress-kard-a-position">тел. +7 (812) 275-75-75</a>
         <a href="#" class="adress-btn" name="adress-btn">Напишите нам</a>
       </div>
     </div>
     <div class="footer-container">
       <ul class="social">
         <li class="social-item">
-          <a href="https://vk.com/" class="a-btn-soc"><img src="img/vk-icon.svg" class="a-btn-soc-icon"
+          <a href="https://vk.com/" class="a-btn-soc"><img src="img/vk-icon.svg" width="26" height="15" class="a-btn-soc-icon"
               alt="vk_logo" /></a>
         </li>
         <li class="social-item">
-          <a href="https://ru-ru.facebook.com/" class="a-btn-soc"><img src="img/fb-icon.svg" class="a-btn-soc-icon"
+          <a href="https://ru-ru.facebook.com/" class="a-btn-soc"><img src="img/fb-icon.svg" width="12" height="22" class="a-btn-soc-icon"
               alt="facebook" /></a>
         </li>
         <li class="social-item">
-          <a href="https://www.instagram.com/" class="a-btn-soc"><img src="img/insta-icon.svg" class="a-btn-soc-icon"
+          <a href="https://www.instagram.com/" class="a-btn-soc"><img src="img/insta-icon.svg" width="21" height="21" class="a-btn-soc-icon"
               alt="instagram" /></a>
         </li>
       </ul>
@@ -204,8 +204,11 @@
       </label>
       <input type="submit" value="отправить" class="submit-button">
     </form>
-    <button type="button" class="close-modal-button" aria-label="Закрыть"><img src="img/close-modal.svg"></button>
+    <button type="button" class="close-modal-button" aria-label="Закрыть"><img src="img/close-modal.svg" width="33" height="33"
+      alt="Close"></button>
   </section>
+  <script src="js/modal.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
