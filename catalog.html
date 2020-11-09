@@ -14,12 +14,13 @@
     <div class="main-navigation-container">
       <nav class="main-navigation">
         <a href="index.html " class="main-logo">
-          <img src="img/nerds-logo.svg" class="main-logo-item"  width="160" height="65"  alt="Логотип дизайн студии Нёрдс" />
+          <img src="img/nerds-logo.svg" class="main-logo-item" width="160" height="65"
+            alt="Логотип дизайн студии Нёрдс" />
         </a>
         <ul class="nav-list">
           <li><a href="index.html" class="nav-item">Студия</a></li>
           <li><a href="blank.html" class="nav-item">Клиенты</a></li>
-          <li><a href="catalog.html" class="nav-item active">Магазин</a></li>
+          <li><a class="active">Магазин</a></li>
           <li><a href="blank.html" class="nav-item">Контакты</a></li>
         </ul>
         <ul class="basket">
@@ -60,7 +61,7 @@
           <fieldset class="grid-choise-container">
             <legend>Сетка:</legend>
             <label class="radio adaptive">
-              <input type="radio" name="grid-choise" value="adaptive" class="radio-input" checked>
+              <input type="radio" name="grid-choise" value="adaptive" class="radio-input" checked disabled>
               <span class="radio-button adaptive"></span>
               Адаптивная
             </label>
@@ -78,12 +79,12 @@
           <fieldset class="features-checkbox-container">
             <legend>Особенности:</legend>
             <label class="check">
-              <input type="checkbox" name="slider" class="check_input" checked>
+              <input type="checkbox" name="slider" class="check_input" checked disabled>
               <span class="check-box slider"></span>
               Слайдер
             </label>
             <label class="check">
-              <input type="checkbox" name="block-advantages" class="check_input">
+              <input type="checkbox" name="block-advantages" class="check_input" disabled>
               <span class="check-box advantages"></span>
               Блок преимуществ
             </label>
@@ -118,14 +119,14 @@
           <li class="sorting-item cc">
             <a href="#">По названию</a>
           </li>
-          <li class="sorting-item to-down">
+          <li class="sorting-item to-down" aria-label="Сверху - вниз">
             <a href="#" class="sorting-a active">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11" fill="#231F20" />
               </svg>
             </a>
           </li>
-          <li class="sorting-item to-up">
+          <li class="sorting-item to-up" aria-label="Снизу - вверх">
             <a href="#">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20" />
@@ -139,7 +140,7 @@
         <ul class="product-list">
           <li class="product-item">
             <a href="#">
-              <img src="img/img-sedona1.jpg" width="359" height="578" alt="Sedona">
+              <img src="img/img-sedona1.jpg" width="358" height="578" alt="Sedona">
             </a>
             <div class="buy-bar">
               <a href="#" class="product-name-a">
@@ -175,7 +176,7 @@
           </li>
           <li class="product-item">
             <a href="#">
-              <img src="img/img-mishka1.jpg" width="359" height="578" alt="Mishka">
+              <img src="img/img-mishka1.jpg" width="358" height="578" alt="Mishka">
             </a>
             <div class="buy-bar">
               <a href="#" class="product-name-a">
@@ -187,7 +188,7 @@
           </li>
           <li class="product-item">
             <a href="#">
-              <img src="img/img-aplus1.jpg" width="359" height="578" alt="Aplus">
+              <img src="img/img-aplus1.jpg" width="358" height="578" alt="Aplus">
             </a>
             <div class="buy-bar">
               <a href="#" class="product-name-a">
@@ -199,7 +200,7 @@
           </li>
           <li class="product-item">
             <a href="#">
-              <img src="img/img-kvast1.jpg" width="359" height="578" alt="Kvast">
+              <img src="img/img-kvast1.jpg" width="358" height="578" alt="Kvast">
             </a>
             <div class="buy-bar">
               <a href="#" class="product-name-a">
@@ -211,7 +212,7 @@
           </li>
         </ul>
         <ul class="pagination">
-          <li class="page-nav-item active"><a>1</a></li>
+          <li class="page-nav-item active-list"><a>1</a></li>
           <li class="page-nav-item"><a href="#">2</a></li>
           <li class="page-nav-item"><a href="#">3</a></li>
           <li class="page-nav-item-next"><a href="#">Следующая</a></li>
@@ -226,23 +227,23 @@
       <div class="address-card">
         <h4>NЁRDS DESIGN STUDIO</h4>
         <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+7(812)275-75-75" class="adress-kard-a-position">тел. +7 (812) 275-75-75</a>
+        <a href="tel:+78122757575" class="adress-kard-a-position">тел. +7 (812) 275-75-75</a>
         <a href="#" class="adress-btn" id="adress-btn">Напишите нам</a>
       </div>
     </div>
     <div class="footer-container">
       <ul class="social">
         <li class="social-item">
-          <a href="https://vk.com/" class="a-btn-soc"><img src="img/vk-icon.svg" width="26" height="15" class="a-btn-soc-icon"
-              alt="vk_logo" /></a>
+          <a href="https://vk.com/" class="a-btn-soc"><img src="img/vk-icon.svg" width="26" height="15"
+              class="a-btn-soc-icon" alt="vk_logo" /></a>
         </li>
         <li class="social-item">
-          <a href="https://ru-ru.facebook.com/" class="a-btn-soc"><img src="img/fb-icon.svg" width="12" height="22" class="a-btn-soc-icon"
-              alt="facebook" /></a>
+          <a href="https://ru-ru.facebook.com/" class="a-btn-soc"><img src="img/fb-icon.svg" width="12" height="22"
+              class="a-btn-soc-icon" alt="facebook" /></a>
         </li>
         <li class="social-item">
-          <a href="https://www.instagram.com/" class="a-btn-soc"><img src="img/insta-icon.svg" width="21" height="21" class="a-btn-soc-icon"
-              alt="instagram" /></a>
+          <a href="https://www.instagram.com/" class="a-btn-soc"><img src="img/insta-icon.svg" width="21" height="21"
+              class="a-btn-soc-icon" alt="instagram" /></a>
         </li>
       </ul>
       <div class="stuff">
@@ -268,8 +269,8 @@
       </label>
       <input type="submit" value="отправить" class="submit-button">
     </form>
-    <button type="button" class="close-modal-button" aria-label="Закрыть"><img src="img/close-modal.svg" width="33" height="33"
-        alt="Close"></button>
+    <button type="button" class="close-modal-button" aria-label="Закрыть"><img src="img/close-modal.svg" width="33"
+        height="33" alt="Close"></button>
   </section>
   <script src="js/script.js"></script>
 </body>

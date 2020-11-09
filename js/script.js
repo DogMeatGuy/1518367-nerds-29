@@ -7,14 +7,16 @@ function nextSlide() {
     slides[currentSlide].className = 'slider-item current';
 };
 
-let openModal = document.querySelector('.adress-btn');
-let modal = document.querySelector('.modal-window');
-let closeModal = modal.querySelector('.close-modal-button');
+const openModal = document.querySelector(".adress-btn");
+const modal = document.querySelector(".modal-window");
+const closeModal = document.querySelector(".close-modal-button")
+openModal.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modal.classList.add("modal-show");
 
-openModal.onclick = function() {
- modal.classList.add('modal-show');
-};
+});
 
-closeModal.onclick = function() {
- modal.classList.remove('modal-show');
-};
+closeModal.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modal.classList.remove("modal-show");
+});
