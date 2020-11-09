@@ -270,8 +270,8 @@ img {
   margin-left: 676px;
   display: flex;
   justify-content: space-between;
-  position: relative;
-  top: 301px;
+  position: absolute;
+  top: 443px;
   left: 232px;
   z-index: 20;
 }
