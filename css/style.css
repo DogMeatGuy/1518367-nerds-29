@@ -267,12 +267,12 @@ img {
 }
 .buttons-slider-container {
   width: 88px;
-  margin-left: 676px;
   display: flex;
   justify-content: space-between;
   position: absolute;
   top: 443px;
-  left: 232px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 20;
 }
 .button-slider {
