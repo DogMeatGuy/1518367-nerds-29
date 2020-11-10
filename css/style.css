@@ -92,6 +92,9 @@ img {
 .main-navigation-container {
   background-color: var(--main-background);
 }
+.main-logo-item.logo-active:active {
+ opacity: 0.3;
+}
 .nav-list {
   position: relative;
   left: -22px;
@@ -1027,13 +1030,6 @@ img {
   line-height: 30px;
   color: var(--black-text);
 }
-.radio {
-  margin-left: 36px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: var(--gray-text);
-}
 .radio-input {
   position: absolute;
   width: 1px;
@@ -1043,19 +1039,40 @@ img {
   padding-left: 30px;
 }
 .radio-button {
+ font-family: inherit;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 19px;
+ color: var(--gray-text);
+}
+.radio-button::before {
+  content: url(../img/radio-off.svg);
   width: 25px;
   height: 25px;
+  background-repeat: no-repeat;
   opacity: 0.4;
-  background-image: url(../img/radio-off.svg);
+  position: absolute;
+  top: -3px;
+  left: -36px;
 }
-.radio-input:checked + .radio-button {
-  background-image: url(../img/radio-on.svg);
+.radio-input:checked + .radio-button::before {
+  content: url(../img/radio-on.svg);
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -3px;
+  left: -36px;
 }
-.radio-input:focus + .radio-button {
+.radio-input:focus + .radio-button::before {
   opacity: 1;
 }
-.radio-input:disabled + .radio-button {
+.radio-input:disabled + .radio-button::before {
   opacity: 0.1;
+}
+.radio-input:disabled + .radio-button {
+  opacity: 0.3;
 }
 .radio.adaptive {
   margin-top: 16px;
@@ -1068,19 +1085,20 @@ img {
 }
 .radio-button.adaptive {
   position: absolute;
-  top: 43px;
-  left: 0px;
+  top: 46px;
+  left: 36px;
 }
 .radio-button.fixed {
   position: absolute;
-  left: 0px;
-  top: 83px;
+  left: 36px;
+  top: 86px;
 }
 .radio-button.rubber {
   position: absolute;
-  top: 123px;
-  left: 0;
+  top: 126px;
+  left: 36px;
 }
+
 /*Check-box*/
 .features-checkbox-container {
   font-weight: normal;
@@ -1089,7 +1107,7 @@ img {
   color: var(--gray-text);
   padding: 0;
   border: none;
-  margin-top: 99px;
+  margin-top: 156px;
   margin-left: 1px;
 }
 .features-checkbox-container legend {
@@ -1106,7 +1124,7 @@ img {
   font-size: 16px;
   line-height: 19px;
   color: var(--gray-text);
-  margin-bottom: 21px;
+  margin-bottom: 40px;
   margin-left: 35px;
 }
 .check_input {
@@ -1117,6 +1135,61 @@ img {
   clip: rect(0 0 0 0);
   padding-left: 30px;
 }
+.check-box {
+ font-family: inherit;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 19px;
+ color: var(--gray-text);
+ white-space: nowrap;
+}
+.check-box::before {
+  content: url(../img/checkbox-off.svg);
+  width: 23px;
+  height: 23px;
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -2px;
+  left: -36px;
+}
+.check_input:checked + .check-box::before {
+  content: url(../img/checkbox-on.svg);
+  width: 23px;
+  height: 23px;
+  opacity: 0.4;
+  background-repeat: no-repeat;
+}
+.check_input:focus + .check-box::before {
+  opacity: 1;
+}
+.check_input:disabled + .check-box::before {
+  opacity: 0.1;
+}
+.check_input:disabled + .check-box {
+  opacity: 0.3;
+}
+.check-box.slider {
+ position: relative;
+}
+.check-box.advantages {
+  position: relative;
+  top: -19px;
+}
+.check-box.news {
+  position: relative;
+  top: -38px;
+}
+.check-box.gallery {
+  position: relative;
+  top: -57px;
+}
+.check-box.cart-basket {
+  position: relative;
+  top: -76px;
+}
+/*
 .check-box {
   width: 23px;
   height: 23px;
@@ -1163,7 +1236,7 @@ img {
   left: -6px;
     top: -2px;
 }
-
+*/
 /*Sorting-show-button*/
 .sorting-show-button {
   background-color: var(--main-background);
@@ -1179,7 +1252,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   padding: 16px 88px;
-  margin-top: 30px;
+  margin-top: -65px;
   margin-left: -1px;
 }
 .sorting-show-button:hover,
@@ -1238,7 +1311,7 @@ img {
   color: var(--black-text);
   opacity: 1;
 }
-.sorting-a.active {
+.sorting-a.a-active {
   opacity: 1;
 }
 .sorting-item.bb {
@@ -1381,7 +1454,7 @@ img {
   display: flex;
   justify-content: space-between;
   width: 443px;
-  margin-top: 39px;
+  margin-top: 40px;
   margin-bottom: 72px;
   margin-right: auto;
   margin-left: 101px;
